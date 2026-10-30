@@ -1,0 +1,33 @@
+{
+  "n_obs": 293,
+  "start": "1992-01-01",
+  "end": "2016-05-01",
+  "seasonal_strength": 0.939,
+  "adf": {
+    "level": {
+      "p_value": 0.8606,
+      "stationary": false
+    },
+    "first difference": {
+      "p_value": 0.0097,
+      "stationary": true
+    }
+  },
+  "sarima_order": {
+    "order": [
+      2,
+      1,
+      1
+    ],
+    "seasonal_order": [
+      0,
+      1,
+      1,
+      12
+    ],
+    "aic": -1348.6
+  },
+  "best_model": "SARIMA",
+  "backtest_folds": 4,
+  "horizon": 12
+}
